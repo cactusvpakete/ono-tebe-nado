@@ -1,17 +1,17 @@
-main {  /* Основной контейнер */
-  display: flex;  
-  flex-direction: column;  
+main {  /* === Основной контейнер === */
+  display: flex;
+  flex-direction: column;
   gap: 183px;  /* Большие отступы между основными секциями (cover, lots, about) */
 }
 
 .content-section {  /* Общий класс для всех секций с контентом */
-  width: 100%;  
-  margin: 0 auto;  
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* === HEADER ================================================================================= */
 
-.header {  /* ШАПКА */
+.header {  /* === ШАПКА === */
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -33,20 +33,20 @@ main {  /* Основной контейнер */
   list-style: none;  /* Отключает стандартный маркер списка для первого пункта меню */
 }
 
-.header__link {   /* Ссылки */
-  font-size: 18px; 
-  white-space: nowrap;  
+.header__link {  /* Ссылки */
+  font-size: 18px;
+  white-space: nowrap;
 }
 
-.header__link_active {  
+.header__link_active {
   text-decoration: none;  /* Убирает подчеркивание у активной ссылки */
 }
 
 .header__logo {  /* Логотип проекта в шапке */
-  display: block;  
-  justify-self: center;  
-  align-self: center;  
-  width: 140px;  
+  display: block;
+  justify-self: center;
+  align-self: center;
+  width: 140px;
 }
 
 .header__logo-image {  /* Размер логотипа */
@@ -65,37 +65,37 @@ main {  /* Основной контейнер */
 }
 
 .address__item {  /* Элементы адреса (телефон и email) */
-  display: block;  
-  font-size: 18px; 
-  line-height: 1.35;  
-  text-underline-position: under;  
+  display: block;
+  font-size: 18px;
+  line-height: 1.35;
+  text-underline-position: under;
 }
 
 .address__address-text {  /* Физический адрес */
-  font-size: 18px;  
-  line-height: 1.35;  
+  font-size: 18px;
+  line-height: 1.35;
 }
 
 /* === COVER ================================================================================= */
 
-.cover {  /* Обложка */
-  position: relative;  
+.cover {  /* === ОБЛОЖКА === */
+  position: relative;
   padding: 0;  /* Сброс отступов */
   background-image: url(../images/cover.jpg);  /* Путь к фоновому изображению */
   background-repeat: no-repeat;  /* Запрещает повторение фонового изображения */
   background-size: cover;  /* Масштабирует изображение, чтобы оно покрывало весь блок */
-  width: 1100px;  
+  width: 1100px;
   height: 757px;
   margin: 0 ;  /* Сброс отступов */
 }
 
 .overlay {  /* Тонер */
-  position: absolute;  
-  top: 0;  
-  left: 0;  
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 0;  /* Самый нижний z-index (будет под контентом) */
-  width: 100%;  
-  height: 100%;  
+  width: 100%;
+  height: 100%;
   opacity: 0.6000000238418579; /* Полупрозрачность 60% */
   background-color: #000000;   /* Черный цвет фона */
 }
@@ -103,9 +103,9 @@ main {  /* Основной контейнер */
 .cover__title {  /* Заголовок на обложке "Оно тебе надо" */
   position: relative;  /* Относительное позиционирование для управления z-index */
   z-index: 1;  /* Размещает заголовок выше overlay (z-index: 0) */
-  display: flex;  
-  flex-direction: column;  
-  gap: 20px;  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   color: #FFF;  
   font-weight: bold;  /* Жирное начертание шрифта */
   font-size: 100px;  /* Очень крупный размер шрифта 100px */
@@ -122,12 +122,12 @@ main {  /* Основной контейнер */
 
 .aligned-text_center {  /* Слово: ТЕБЕ */
   line-height: 1;  /* Нормализует межстрочный интервал до 1 (100%) */
-  text-align: center;  
+  text-align: center;
 }
 
 .aligned-text_right {  /* Слово: НАДО */
   line-height: 1;  /* Нормализует межстрочный интервал до 1 (100%) */
-  text-align: right;  
+  text-align: right;
 }
 
 .letter-spacing-extended {  /* Увеличение буквенного интервала */
@@ -143,10 +143,10 @@ main {  /* Основной контейнер */
 .cover__description {  /* Контейнер для подзаголовка и кнопки */
   position: relative;  /* Относительное позиционирование для z-index */
   z-index: 1;  /* Размещает контент выше overlay */
-  display: flex;  
-  justify-content: flex-end;  
-  align-items: center;  
-  gap: 78px;  /* Отступ 78px между текстом и кнопкой */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 107px;  /* Отступ 78px между текстом и кнопкой */
   padding: 137px 50px 0 50px;  /* Отступ сверху 136px, остальные стороны без отступов */
 }
 
@@ -174,13 +174,13 @@ main {  /* Основной контейнер */
 }
 
 .bet-button:hover {  /* Эффект при наведении на кнопку */
-  color: #000000;  
+  color: #000000;
   background-color: #FFF;  /* Фон становится белым (инверсия цветов) */
 }
 
 /* === LOTS ================================================================================= */
 
-.lots {  /* Секция с карточками лотов */
+.lots {  /* === ЛОТЫ === */
   margin: 0 24px;  /* Боковые отступы 24px */
   width: 1052px;
   height: 723px;
@@ -199,7 +199,7 @@ main {  /* Основной контейнер */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
-  justify-content: center; 
+  justify-content: center;
   list-style: none;  /* Убирает стандартные маркеры списка */
   margin: 0;  /* Сброс отступов */
   padding: 0;  /* Сброс отступов */
@@ -214,14 +214,14 @@ main {  /* Основной контейнер */
 .card-link {  /* Карточка в ссылке */
   display: block;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 
 .card {  /* Стилизация карточки */
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   width: auto;
   height: 100%;
   padding: 0;  /* Сброс отступов */
@@ -251,45 +251,45 @@ main {  /* Основной контейнер */
 .card__title {  /* Заголовок на карточке */
   position: relative;  /* Относительное позиционирование для z-index */
   z-index: 1;  /* Размещает текст выше overlay */
-  color: #FFF; 
-  font-weight: bold; 
-  font-size: 22px; 
-  line-height: 1.2;  
+  color: #FFF;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
   text-decoration: underline #ffffff; /* Нижнее подчёрквиание + значение цвета */
   text-underline-position: under;
-  text-transform: uppercase; 
-  padding: 48px 40px 0 40px; 
+  text-transform: uppercase;
+  padding: 48px 40px 0 40px;
   margin: 0;  /* Сброс отступов */
 }
 
 .card__text {  /* Содержание(текст) карточки */
   position: relative;  /* Относительное позиционирование для z-index */
   z-index: 1;  /* Размещает текст выше overlay */
-  color: #FFF; 
-  font-size: 20px; 
-  line-height: 1.2; 
-  padding: 0 40px 48px 40px;  
-  margin: 0;  
+  color: #FFF;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 0 40px 48px 40px;
+  margin: 0;
 }
 
 .lots__look-more-link {  /* Ссылка: посмотреть больше */
-  display: block;  
-  margin: 30px 0 3px 40px;   
-  font-size: 20px;  
-  text-decoration-line: underline;  
-  text-underline-position: under;   
-  width: fit-content;  
+  display: block;
+  margin: 30px 0 3px 40px;
+  font-size: 20px;
+  text-decoration-line: underline;
+  text-underline-position: under;
+  width: fit-content;
 }
 
 /* === ABOUT ================================================================================= */
 
-.about {  /* Контейнер: Об аукционе */
+.about {  /* === ОБ АУКЦИОНЕ === */
   display: grid;  /*  */
   grid-template-columns: 334px 1fr;  
-  column-gap: 25px;  
-  width: 1052px;  
-  height: 592px; 
-  margin-top: -60px; 
+  column-gap: 25px;
+  width: 1052px;
+  height: 592px;
+  margin-top: -60px;
 }
 
 .about__column {  /* Общий класс для колонок в секции */
@@ -299,15 +299,15 @@ main {  /* Основной контейнер */
 .about__column_logo {  /* Колонка для логотипа */
   display: flex;
   justify-content: center;
-  margin: 35px 0 0 47px; 
+  margin: 35px 0 0 47px;
 }
 
 .about__logo {  /* Чёрный круг для логотипа */
-  display: flex;  
-  justify-content: center;  
-  align-items: center; 
-  width: 240px;  
-  height: 240px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;  /* Занимает половину границы */
   background-color: #000000;  
 }
@@ -317,22 +317,22 @@ main {  /* Основной контейнер */
 }
 
 .about__column_text {  /* Класс для текстовой колонки справа */
-  display: flex;  
-  flex-direction: column;   
-  justify-content: flex-start;   
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .about__title {  /* Заголовок: Об аукционе */
-  font-weight: bold;   
-  font-size: 40px;  
-  line-height: 1;   
-  text-transform: uppercase;  
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
   margin-top: 136px;
 }
 
 .about__text {  /* Контейнер для текста правой колонки */
-  display: flex;  
-  flex-direction: column;  
+  display: flex;
+  flex-direction: column;
   margin-top: 100px;
   gap: 24px;
 }
@@ -346,10 +346,10 @@ main {  /* Основной контейнер */
 
 /* === FOOTER ================================================================================= */
 
-.footer {  /* Подвал сайта */
-  display: grid;  
-  grid-template-columns: 1fr 164px 290px;   
-  column-gap: 154px;   
+.footer {  /* === ПОДВАЛ === */
+  display: grid;
+  grid-template-columns: 1fr 164px 290px;
+  column-gap: 154px;
   margin: 180px 0 0 50px;
   width: 1050px;
   height: 180px;
@@ -358,18 +358,18 @@ main {  /* Основной контейнер */
 .footer__menu-list {  /* Список меню в подвале */
   display: flex;
   flex-direction: column;
-  justify-content: center;  
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   list-style: none;  /* Убирает стандартные маркеры списка */
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
 }
 
 .footer__menu-link {  /* Ссылки в меню подвала */
   display: block;
-  font-size: 18px;  
-  line-height: normal;  
-  text-underline-position: under;   
-  align-items: center; 
+  font-size: 18px;
+  line-height: normal;
+  text-underline-position: under;
+  align-items: center;
 } 
 
 .footer__menu-link_active {  /* Активная ссылка в меню подвала */
@@ -377,15 +377,15 @@ main {  /* Основной контейнер */
 }
 
 .footer__social-list {  /* Список иконок социальных сетей */
-  display: flex;   
-  gap: 48px;   
-  list-style: none;   
+  display: flex;
+  gap: 48px;
+  list-style: none;
   padding-right: 50px;
   justify-content: end;
 }
 
 .footer__social-icon {  /* Иконки социальных сетей */
-  width: auto;   
+  width: auto;
   height: 48px;  /* Фиксированная высота 48px для всех иконок */
   justify-content: end;
 }
