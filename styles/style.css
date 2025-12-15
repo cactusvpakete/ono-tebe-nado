@@ -106,7 +106,7 @@ main {  /* === Основной контейнер === */
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: #FFF;  
+  color: #FFF;
   font-weight: bold;  /* Жирное начертание шрифта */
   font-size: 100px;  /* Очень крупный размер шрифта 100px */
   line-height: 1.15;  /* Межстрочный интервал 1.15 (115% от размера шрифта) */
