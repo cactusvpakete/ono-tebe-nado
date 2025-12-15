@@ -1,4 +1,4 @@
-<!DOCTYPE html>  <!-- Объявление типа документа HTML5 -->
+<!DOCTYPE html>  <!-- Объявление типа документа HTML -->
 
 <html lang="ru">  <!-- Указание языка страницы русский -->
 
@@ -14,22 +14,23 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />  <!-- Стили шрифтов -->
     <link rel="stylesheet" href="./styles/global.css" />  <!-- Глобальные стили (сброс и базовые настройки) -->
     <link rel="stylesheet" href="./styles/style.css" />  <!-- Основные стили страницы -->
+    
   </head>
 
   <body>  <!-- Основное содержимое страницы -->
     <!--=== HEADER ===-------------------------------------------------------------------------------------->
     
-    <header class="header content-section">  <!-- Шапка сайта с двумя классами для стилизации -->
+    <header class="header content-section">  <!-- Шапка сайта -->
       <nav class="header__menu">  <!-- Навигационное меню -->
         <ul class="header__links-list">  <!-- Список навигационных ссылок -->
-          <li class="header__links-list-item header__links-list-item_no-bullit">  <!-- Первый пункт меню без маркера -->
-            <a class="header__link header__link_active text-link" href="#0">главная</a>  <!-- Ссылка "главная" -->
+          <li class="header__links-list-item header__links-list-item_no-bullit">  <!-- главная - без кружочка -->
+            <a class="header__link header__link_active text-link" href="#0">главная</a>  <!-- Ссылка: главная -->
           </li>
           <li class="header__links-list-item text-link">  <!-- Меню -->
-            <a class="header__link" href="#0">посмотреть лоты</a>  <!-- Ссылка "посмотреть лоты" -->
+            <a class="header__link" href="#0">посмотреть лоты</a>  <!-- Ссылка: посмотреть лоты -->
           </li>
           <li class="header__links-list-item text-link">  <!-- Меню -->
-            <a class="header__link" href="#0">об аукционе</a>  <!-- Ссылка "об аукционе" -->
+            <a class="header__link" href="#0">об аукционе</a>  <!-- Ссылка: об аукционе -->
           </li>
         </ul>
       </nav>
@@ -43,9 +44,7 @@
       <address class="header__address">  <!-- Блок с контактной информацией -->
         <a class="address__item text-link" href="tel:+99995555555">+9 999 555 5555</a>  <!-- Телефон -->
         <a class="address__item text-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>  <!-- Псевдопочта -->
-        <p class="address__address-text">  <!-- Физический адрес -->
-          наб. Принсенграхт 263-265,<br />Амстердам  <!-- Адрес с переносом строки -->
-        </p>
+        <p class="address__address-text">наб. Принсенграхт 263-<br />265, Амстердам</p>  <!-- Адрес -->
       </address>
     </header>
 
@@ -54,23 +53,16 @@
     <main>  <!-- Основное содержание страницы -->
       <!--=== COVER ===-------------------------------------------------------------------------------------->
 
-      <section class="cover content-section">  <!-- Секция с главным баннером -->
+      <section class="cover content-section">  <!-- Секция с обложкой -->
         <div class="overlay"></div>  <!-- Полупрозрачный черный оверлей поверх фона -->
-        <h1 class="cover__title">  <!-- Главный заголовок страницы (h1) -->
-          <span class="aligned-text"  
-            >оно<span class="letter-spacing-extended"> </span></span
-          >  <!-- Первое слово "ОНО" с выравниванием по умолчанию (влево) -->
-          <span class="aligned-text aligned-text_center"
-            >тебе<span class="letter-spacing-extended"> </span></span
-          >   <!-- Второе слово "ТЕБЕ" с центрированием -->
-          <span class="aligned-text aligned-text_right"
-            ><span class="letter-spacing-extended"> </span>над<span class="remove-spacing">о</span></span
-          >    <!-- Третье слово "НАДО" с выравниванием вправо -->
+        <h1 class="cover__title">  <!-- Заголовок: ОНО ТЕБЕ НАДО -->
+          <span class="aligned-text">оно<span class="letter-spacing-extended"> </span></span>
+          <span class="aligned-text aligned-text_center">тебе<span class="letter-spacing-extended"> </span></span>
+          <span class="aligned-text aligned-text_right"><span class="letter-spacing-extended">              
+            </span>над<span class="remove-spacing">о</span></span>
         </h1>
-        <div class="cover__description">  <!-- Контейнер для подзаголовка и кнопки -->
-          <p class="cover__description-text">  <!-- Надпись с большими проблеами "Аукцион вещей, в которые никто не верил" -->
-            Аукцион вещей, в которые никто не верил
-          </p>  
+        <div class="cover__description">  <!-- Контейнер для описания и кнопки -->
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>  <!-- Надпись: Аукцион вещей, в которые никто не верил -->
           <button class="bet-button">Сделать ставку</button>  <!-- Кнопка "Сделать вставку" -->
         </div>
       </section>
@@ -80,11 +72,11 @@
       <section class="lots content-section">  <!-- Секция с карточками лотов -->
         <h2 class="lots__heading">Лоты</h2>  <!-- Надпись "Лоты" -->
         <ul class="lots__card-list">  <!-- Список карточек -->
-          <li class="lots__card-list-item">  <!-- Первый элемент списка (карточка) -->
-            <a class="card-link" href="#0">  <!-- Вся карточка является кликабельной ссылкой -->
-              <article class="card card_type_film">  <!-- Семантический тег для независимого контента с типом "фильм" -->
+          <li class="lots__card-list-item">  <!-- Сама карточка -->
+            <a class="card-link" href="#0">  <!-- Ссылка-карточка -->
+              <article class="card card_type_film">  <!-- Заголовок карточки -->
                 <div class="overlay"></div>  <!-- Оверлей для затемнения фонового изображения -->
-                <h3 class="card__title">  <!-- Предложение лота №1 (заголовок третьего уровня) -->
+                <h3 class="card__title">  <!-- Предложение лота №1 -->
                   Фильм режиссёра, который бросил киношколу
                 </h3>
                 <p class="card__text">  <!-- Абзц лота №1 -->
@@ -95,14 +87,14 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">  <!-- Второй элемент списка (карточка) -->
+          <li class="lots__card-list-item">  <!-- Вторая карточка -->
             <a class="card-link" href="#0">
               <article class="card card_type_book">  <!-- Карточка с типом "книга" -->
                 <div class="overlay"></div>
-                <h3 class="card__title">  <!-- Предложение лота № 1 -->
+                <h3 class="card__title">  <!-- Предложение лота № 2 -->
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p class="card__text">  <!-- Абзац описания лот а №2 -->
+                <p class="card__text">  <!-- Абзац описания лот а  №2 -->
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -113,7 +105,7 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">  <!-- Третий элемент списка (карточка) -->
+          <li class="lots__card-list-item">  <!-- Третья карточка -->
             <a class="card-link" href="#0">
               <article class="card card_type_picture">  <!-- Карточка с типом "картина" -->
                 <div class="overlay"></div>
@@ -130,32 +122,32 @@
             </a>
           </li>
         </ul>
-        <a class="lots__look-more-link text-link" href="#0">посмотреть больше</a>  <!-- Сслыка "посмотреть большее" -->
+        <a class="lots__look-more-link text-link" href="#0">посмотреть больше</a>  <!-- Сслыка: посмотреть большее -->
       </section>
 
       <!--=== ABOUT ===-------------------------------------------------------------------------------------->
 
-      <section class="about content-section">  <!-- Секция "Об аукционе" -->
+      <section class="about content-section">  <!--=== Об аукционе ===-->
         <div class="about__column">  <!-- Левая колонка с логотипом -->
-          <div class="about__logo">  <!-- Ниже логотип проекта в чёрном круге -->
+          <div class="about__logo about__column_logo">  <!-- Ниже логотип проекта в чёрном круге -->
             <img
               class="about__logo-image"
               src="images/logo-white.svg"  
               alt="Логотип проекта"
-            />  <!-- Белая версия логотипа для темного фона -->
+            />  <!-- Белая версия логотипа -->
           </div>
         </div>
         <div class="about__column about__column_text">  <!-- Правая колонка с текстом -->
-          <h2 class="about__title">Об аукционе</h2>  <!-- Надпись "Об аукционе" -->
+          <h2 class="about__title">Об аукционе</h2>  <!-- Надпись: Об аукционе -->
           <div class="about__text">  <!-- Контейнер для текстового контента -->
-            <p>  <!-- Абзац большого текста -->
+            <p>  <!-- Первый абзац(верхний) -->
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
               или картина, которую может нарисовать даже ребёнок? Кому нужны все
               эти странные вещи, созданные любителями?
             </p>
-            <p>  <!-- Абзац большого текста -->
+            <p>  <!-- Второй абзац(нижний) -->
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -172,23 +164,21 @@
     <!--=== FOOTER ===-------------------------------------------------------------------------------------->
 
     <footer class="footer content-section">  <!-- Подвал сайта -->
-      <address class="address">  <!-- Блок с контактной информацией (дублируется из header) -->
+      <address class="address">  <!-- Блок адресом (дублируется из header) -->
         <a class="address__item text-link" href="tel:+99995555555">+9 999 555 5555</a>  <!-- Телефон -->
         <a class="address__item text-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>  <!-- псевдопочта -->
-        <p class="address__address-text">  <!-- Адрес -->
-          наб. Принсенграхт 263-265,<br />Амстердам
-        </p>
+        <p class="address__address-text">наб. Принсенграхт 263-265,<br />Амстердам</p>  <!-- Адрес -->
       </address>
-      <nav class="footer__menu">  <!-- Навигационное меню в подвале -->
+      <nav class="footer__menu">  <!-- Навигационное меню -->
         <ul class="footer__menu-list">  <!-- Список меню -->
-          <li class="footer__menu-list-item">  <!-- Пункт меню -->
-            <a class="footer__menu-link footer__menu-link_active text-link" href="#0">главная</a>  <!-- Ссылка "главная" -->
+          <li class="footer__menu-list-item">  <!-- Ссылки в меню -->
+            <a class="footer__menu-link footer__menu-link_active text-link" href="#0">главная</a>  <!-- Ссылка: главная -->
           </li>
-          <li class="footer__menu-list-item">  <!-- Пункт меню -->
-            <a class="footer__menu-link text-link" href="#0">посмотреть лоты</a>
+          <li class="footer__menu-list-item">  
+            <a class="footer__menu-link text-link" href="#0">посмотреть лоты</a>  <!-- Ссылка: посмотреть лоты -->
           </li>
-          <li class="footer__menu-list-item">  <!-- Пункт меню -->
-            <a class="footer__menu-link text-link" href="#0">об аукционе</a>
+          <li class="footer__menu-list-item">  
+            <a class="footer__menu-link text-link" href="#0">об аукционе</a>  <!-- Ссылка: об аукционе -->
           </li>
         </ul>
       </nav>
