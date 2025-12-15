@@ -285,7 +285,7 @@ main {  /* === Основной контейнер === */
 
 .about {  /* === ОБ АУКЦИОНЕ === */
   display: grid;  /*  */
-  grid-template-columns: 334px 1fr;  
+  grid-template-columns: 334px 1fr;
   column-gap: 25px;
   width: 1052px;
   height: 592px;
@@ -309,7 +309,7 @@ main {  /* === Основной контейнер === */
   width: 240px;
   height: 240px;
   border-radius: 50%;  /* Занимает половину границы */
-  background-color: #000000;  
+  background-color: #000000;
 }
 
 .about__logo-image {  /* Изображение логотипа внутри черного круга */
